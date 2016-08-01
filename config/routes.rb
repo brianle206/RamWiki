@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   wiki_root '/wiki'
   root 'create#index'
+  get '/create' => 'create#create'
+  post 'wiki' => 'wiki#new/:title'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
