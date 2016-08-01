@@ -29,7 +29,7 @@ gem 'bootstrap'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'sprockets', '3.6.3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rails_12factor', group: :production
