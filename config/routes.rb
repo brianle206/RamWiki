@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+
+  get '/login' => 'user#login'
+  get 'user/create_landing'
+  get '/new' => 'user#create'
+  get '/user/index/:id' => 'user#index'
+  get 'user/edit'
+  get '/new/account' => 'user#create'
+
   wiki_root '/wiki'
   root 'create#index'
   get '/create' => 'create#create'
