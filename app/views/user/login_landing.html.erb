@@ -1,0 +1,12 @@
+<h1>User#login</h1>
+<% if flash[:email] %>
+ 	<% flash[:errors]%>
+<% end %>
+<form action='login'>
+	<input type='hidden' value='<%= form_authenticity_token %>' name='authenticity_token'>
+	<label for='Email'>Email</label><br>
+	<input type='text' name='email'><br>
+	<label for='password'>Password</label><br>
+	<input type='password' name='password'><br>
+	<button class='btn btn-primary'>Login</button><br>
+</form>
